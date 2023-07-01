@@ -35,6 +35,4 @@ COPY --from=builder /mcalculator/server/public /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 
-#TO BUILD  docker build -t mcalculator .
-#TO RUN    docker run -p 80:80 mcalculator
 
